@@ -1,0 +1,70 @@
+2019-11-18 14:22:07.7964||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/accesstoken|action: 
+2019-11-18 14:22:07.8144||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::1 |url: http://localhost/WeChatBaseAPI/accesstoken|action: 
+2019-11-18 14:22:08.0044||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/favicon.ico|action: 
+2019-11-18 14:22:08.0044||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::1 |url: http://localhost/favicon.ico|action: 
+2019-11-18 14:30:14.4703||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/accesstoken|action: 
+2019-11-18 14:31:20.3370|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserCacheString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 38
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserTokenCacheString(IDistributedCache cache, Object key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 70
+   at HttpContextAnalysisOptions.Analysis(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisOptions.cs:line 29
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/favicon.ico|action: 
+2019-11-18 14:33:40.5051||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/accesstoken|action: 
+2019-11-18 14:34:10.5528|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 12s ago, last-write: 12s ago, unanswered-write: 20506s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+ ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 12s ago, last-write: 12s ago, unanswered-write: 20506s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserCacheString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 38
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserTokenCacheString(IDistributedCache cache, Object key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 70
+   at HttpContextAnalysisOptions.Analysis(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisOptions.cs:line 29
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/favicon.ico|action: 
+2019-11-18 14:34:15.1540||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/accesstoken|action: 
+2019-11-18 16:09:03.9708||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-18 16:09:04.5349||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/favicon.ico|action: 
+2019-11-18 16:09:25.6061||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-18 16:09:25.7561|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 3s ago, last-write: 3s ago, unanswered-write: 26221s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+ ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 3s ago, last-write: 3s ago, unanswered-write: 26221s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserCacheString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 38
+   at CustomeAuthenticationOptions.getPatternList(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 30
+   at CustomeAuthenticationOptions.ignorePath(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 79
+   at CustomeAuthenticationMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationMiddleware.cs:line 33
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 49
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/info|action: getWebInfo
+2019-11-18 16:09:44.3091||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-18 16:11:58.2228||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-18 16:12:21.0501||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-18 16:12:22.0772||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/jsapiinfo,get |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: GetJSApiInfo
+2019-11-18 16:13:37.9985||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-18 16:14:16.0237||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-18 16:23:01.0147||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-18 16:25:33.5994||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-18 16:27:11.0850||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:127.0.0.1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-18 17:45:08.1425||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-18 17:45:09.3486||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/jsapiinfo,get |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: GetJSApiInfo
+2019-11-18 17:45:09.6646||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/favicon.ico|action: 
+2019-11-18 17:45:42.2725||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 

@@ -1,0 +1,84 @@
+2020-04-17 15:45:49.5895||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=rg10lqsyijzk51fwdc2fxhvx; ucmlskin_2018=U7_S8
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/|action: 
+2020-04-17 15:45:49.5895||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/|action: 
+2020-04-17 15:45:52.2707||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/|action: 
+2020-04-17 15:45:52.5817||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=rg10lqsyijzk51fwdc2fxhvx; ucmlskin_2018=U7_S8
+Host:localhost
+Referer:http://localhost/
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2020-04-17 15:45:52.5817||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2020-04-17 15:45:52.9747||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2020-04-17 15:47:13.4723||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ |url: http://192.168.60.181/|action: 
+2020-04-17 15:47:13.4723||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 |url: http://192.168.60.181/|action: 
+2020-04-17 15:47:13.8784||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/css,*/*;q=0.1
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+Referer:http://192.168.60.181/
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ |url: http://192.168.60.181/vendor/font-awesome-4.7.0/css/font-awesome.css|action: 
+2020-04-17 15:47:13.8784||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 |url: http://192.168.60.181/vendor/font-awesome-4.7.0/css/font-awesome.css|action: 
+2020-04-17 15:47:13.8824||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/css,*/*;q=0.1
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+Referer:http://192.168.60.181/
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ |url: http://192.168.60.181/css/style.css|action: 
+2020-04-17 15:47:13.8824||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 |url: http://192.168.60.181/css/style.css|action: 
+2020-04-17 15:47:14.1184|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.181/css/style.css|action: 
+2020-04-17 15:47:14.4814|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ZM.Extensions.EntityFrameworkCoreEx.DbContextExtensions.saveChangesAsyncClientWin(DbContext dbContext, Int32 retryCount) in e:\mywork\testcode\codeBDS\WebAPI\WebAPI\Extensions\DbContextExtensions.cs:line 356
+   at WebAPI.Common.DataServices.createAccessInfo(DbContext dbContext, Guid userid, String Url, String Path, String Ip, String Method, Boolean IsBlocked, String RequestKey) in e:\mywork\testcode\codeBDS\WebAPI\WebAPI\Common\DataServices.cs:line 48
+   at IPCheckOptions.createAccessInfo(Guid userid, String Url, String Path, String Ip, String Method, Boolean IsBlocked, String requestKey) in e:\mywork\testcode\codeBDS\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 167
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\codeBDS\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 46
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\codeBDS\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://192.168.60.181/css/style.css|action: 
+2020-04-17 15:47:14.5454||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+Referer:http://192.168.60.181/
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ |url: http://192.168.60.181/img/favicons/favicon-32x32.png|action: 
+2020-04-17 15:47:14.5454||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 |url: http://192.168.60.181/img/favicons/favicon-32x32.png|action: 

@@ -1,0 +1,211 @@
+2019-11-20 10:38:50.3902||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 10:38:50.7812|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (69ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (DbType = Guid), @p5='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; |url: http://localhost/info|action: getWebInfo
+2019-11-20 10:38:50.9602|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AccessInfo'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2c1e36f9-11d2-4ed0-a47a-4657347e7ad1
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AccessInfo'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2c1e36f9-11d2-4ed0-a47a-4657347e7ad1
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://localhost/info|action: getWebInfo
+2019-11-20 10:40:17.4461||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 10:51:55.8251||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 10:53:01.2318||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/favicon.ico|action: 
+2019-11-20 10:53:05.4261|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://localhost/favicon.ico|action: 
+2019-11-20 10:55:23.1139||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 10:57:39.8438||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 10:59:03.6506|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: SocketClosed on EVAL
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2128
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserCacheString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 38
+   at IPCheckOptions.getIpWhiteList(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 27
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 38
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/info|action: 
+2019-11-20 11:01:34.5832||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 11:02:20.5298||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 11:02:48.1384||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 11:47:28.6057||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-20 11:50:59.6458||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-20 11:51:00.9379||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/jsapiinfo,get |url: http://localhost/WeChatBaseAPI/jsapiinfo|action: GetJSApiInfo
+2019-11-20 13:47:05.6012||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:47:12.4446||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:47:14.5127||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:55:19.8595||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:55:51.9043||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:56:42.2022||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/weui/example/index.html|action: 
+2019-11-20 13:56:58.0781||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:57:57.5365||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:57:58.2895||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:57:58.3215|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:59:11.9768||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:59:16.3050||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:59:17.9261|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:59:50.8030||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 13:59:56.9183||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:00:13.3723|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:00:35.8116||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:00:50.4744||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:01:23.6523|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:02:46.1160||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:02:59.4618||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:03:53.8309|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:05:28.5183||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:05:39.2509||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:06:10.6227|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:06:27.0616||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:06:31.3799||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:06:38.1823|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:07:14.3714||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:07:21.4218||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:07:26.0420|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebAPI.DBContexts.EntityContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:10:42.4573||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:10:46.9115||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:10:50.7867||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-20 14:11:19.3794||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:11:19.6064||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:11:20.2144||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-20 14:11:47.4160||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:11:47.6380||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:11:52.6653||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-20 14:21:48.6114||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-20 14:21:49.0524||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 

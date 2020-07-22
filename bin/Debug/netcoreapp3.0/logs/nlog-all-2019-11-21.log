@@ -1,0 +1,14 @@
+2019-11-21 15:28:27.5943||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-21 15:28:57.3420|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/   
+2019-11-21 15:28:58.0560|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-21 15:31:13.1968||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-21 15:31:16.6840|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/   
+2019-11-21 15:32:26.8160||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 

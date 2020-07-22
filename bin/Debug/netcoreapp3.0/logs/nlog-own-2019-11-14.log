@@ -1,0 +1,107 @@
+2019-11-14 16:47:42.8663||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/|action: 
+2019-11-14 16:48:31.4871||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken|action: 
+2019-11-14 16:48:32.6352||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken,get |url: http://localhost/WeChatAPI/accesstoken|action: 
+2019-11-14 16:48:43.2298||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:48:43.3948||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:49:03.2399||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:49:03.5169||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:49:05.3591||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:49:05.5481||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:50:12.0629||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:50:55.3983||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:51:06.4000||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:51:33.8415||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:52:16.3850||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:05.8732||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:08.4854|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisTimeoutException: Timeout performing EVAL, inst: 0, queue: 0, qu: 0, qs: 0, qc: 0, wr: 0, wq: 0, in: 0, ar: 0, clientName: ZHOUMING, serverEndpoint: 119.27.177.189:6379, keyHashSlot: 16177 (Please take a look at this article for some common client-side issues that can cause timeouts: http://stackexchange.github.io/StackExchange.Redis/Timeouts)
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2120
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Set(String key, Byte[] value, DistributedCacheEntryOptions options)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString(IDistributedCache cache, String key, String value, DistributedCacheEntryOptions options)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.setUserCacheString(IDistributedCache cache, Object userid, String key, String value, DistributedCacheEntryOptions options) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 44
+   at CustomeAuthenticationOptions.getUserActionList(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 66
+   at CustomeAuthenticationOptions.checkAction(HttpContext context, String& result) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 95
+   at CustomeAuthenticationMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationMiddleware.cs:line 35
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 49
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:10.6255||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:21.2301||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:21.3981||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:54.6490||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:54.8100||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:54:58.2592||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:55:23.6317||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:55:40.7847||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:56:11.4984||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken|action: 
+2019-11-14 16:56:23.0291||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken|action: 
+2019-11-14 16:56:27.6834||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken|action: 
+2019-11-14 16:57:09.3507||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:58:19.0187||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:59:00.2421||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:59:01.2431||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 16:59:55.6442||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 17:01:28.7576||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 17:01:30.3007||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatAPI/accesstoken/|action: 
+2019-11-14 17:02:09.6189||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/env|action: 
+2019-11-14 17:02:10.6060||DEBUG|CustomeAuthenticationMiddleware|/env,get |url: http://localhost/env|action: getEnv
+2019-11-14 17:02:43.9539||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/env|action: 
+2019-11-14 17:02:53.5304||DEBUG|CustomeAuthenticationMiddleware|/env,get |url: http://localhost/env|action: getEnv
+2019-11-14 17:02:57.7437||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/evn|action: 
+2019-11-14 17:03:55.1029||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatMsg/|action: 
+2019-11-14 17:04:13.4820||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/evn|action: 
+2019-11-14 17:04:17.2462||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/evn/|action: 
+2019-11-14 17:04:17.4032||DEBUG|CustomeAuthenticationMiddleware|/evn/,get |url: http://localhost/evn/|action: 
+2019-11-14 17:04:30.5250||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/env|action: 
+2019-11-14 17:04:30.6840||DEBUG|CustomeAuthenticationMiddleware|/env,get |url: http://localhost/env|action: getEnv
+2019-11-14 17:04:52.6542||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/info|action: 
+2019-11-14 17:05:43.5501||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI|action: 
+2019-11-14 17:05:44.7662||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi,get |url: http://localhost/WeChatBaseAPI|action: 
+2019-11-14 17:06:17.6171||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI|action: 
+2019-11-14 17:06:32.8800||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/accesstoken|action: 
+2019-11-14 17:06:36.9192||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/accesstoken/|action: 
+2019-11-14 17:07:49.6494||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env|action: 
+2019-11-14 17:08:05.6243||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env|action: 
+2019-11-14 17:08:09.0925||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:35.1428||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:37.2979||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:37.9790||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:38.4490||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:38.6710||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:38.8630||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:39.0640||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:39.2471||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:39.4241||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:39.6161||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:39.8151||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:40.0071||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:40.1991||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:40.3841||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:40.5831||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:40.7681||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:40.9592||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:41.1352||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:41.3512||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:10:54.3769||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env/|action: 
+2019-11-14 17:11:12.1909||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatMsg|action: 
+2019-11-14 17:12:53.3237||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/BaseAPI|action: 
+2019-11-14 17:13:04.8834||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/BaseAPI/env|action: 
+2019-11-14 17:13:50.9480||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/baseapi/env|action: 
+2019-11-14 17:15:17.6450||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env|action: 
+2019-11-14 17:15:18.8020||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/env,get |url: http://localhost/WeChatBaseAPI/env|action: Get
+2019-11-14 17:15:49.8548||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env|action: 
+2019-11-14 17:16:39.1986||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/WeChatBaseAPI/env|action: 
+2019-11-14 17:16:54.6795||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/env|action: 
+2019-11-14 17:19:01.3448||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/env|action: 
+2019-11-14 17:19:54.4168||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/env|action: 
+2019-11-14 17:19:56.6109||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/env|action: 
+2019-11-14 17:20:19.8783||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/env|action: 
+2019-11-14 17:20:44.9687||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 
+2019-11-14 17:22:03.7802||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 
+2019-11-14 17:22:08.7855||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 
+2019-11-14 17:22:16.5059||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 
+2019-11-14 17:26:02.8689||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 
+2019-11-14 17:32:05.5846||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 
+2019-11-14 17:33:43.5532||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 
+2019-11-14 17:34:57.3945||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 |url: http://localhost/wechatbaseapi/accesstoken|action: 

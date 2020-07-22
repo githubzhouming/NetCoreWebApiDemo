@@ -1,0 +1,256 @@
+2020-01-06 14:44:18.1400||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-01-06 14:46:44.1524||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-01-06 14:47:18.2453|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/rabbitmqtest   
+2020-01-06 14:47:18.4723||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2020-01-06 14:47:18.4723||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:47:19.2234|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-01-06 14:47:20.1354|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:47:20.6785|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-01-06 14:47:20.8895|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([ActionAccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [ActionAccessInfo] USING (
+VALUES (@p0, 0)) AS i ([RequestKey], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([RequestKey])
+VALUES (i.[RequestKey])
+OUTPUT INSERTED.[ActionAccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[ActionAccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [ActionAccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[ActionAccessInfoId] = [i].[ActionAccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:47:20.9885||DEBUG|CustomeAuthenticationMiddleware|/rabbitmqtest,get 
+2020-01-06 14:47:21.1165|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2871.8468000000003ms 200 application/json; charset=utf-8 
+2020-01-06 14:47:21.1835|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/favicon.ico   
+2020-01-06 14:47:21.2225||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+Referer:http://192.168.60.84/rabbitmqtest
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ 
+2020-01-06 14:47:21.2225||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:47:21.3095|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:47:21.4165|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 232.79690000000002ms 404  
+2020-01-06 14:49:29.1188|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/rabbitmqtest   
+2020-01-06 14:49:29.1628||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2020-01-06 14:49:29.1658||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:49:29.4568|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:49:29.6858|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported' 
+2020-01-06 14:49:29.6858|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported' 
+2020-01-06 14:49:29.6858|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 569.9241000000001ms 405  
+2020-01-06 14:50:22.6139|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://192.168.60.84/rabbitmqtest  0 
+2020-01-06 14:50:22.6579||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:0
+Postman-Token:5d25c3b4-11e2-4138-9d00-52bfad03d9a7
+ 
+2020-01-06 14:50:22.6599||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:50:22.7569|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:50:22.8879|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getLoginToken (WebAPI)' 
+2020-01-06 14:50:22.9569|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getLoginToken", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getLoginToken(RabbitMQInfo) on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-01-06 14:50:22.9799|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'. 
+2020-01-06 14:50:23.0319|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getLoginToken (WebAPI) in 70.3214ms 
+2020-01-06 14:50:23.0329|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getLoginToken (WebAPI)' 
+2020-01-06 14:50:23.0329|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 420.74010000000004ms 415 application/problem+json; charset=utf-8 
+2020-01-06 14:51:14.6198|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://192.168.60.84/rabbitmqtest application/json 2 
+2020-01-06 14:51:14.6638||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:3ca9cb1d-b985-457c-92de-5b33f9975a59
+ 
+2020-01-06 14:51:14.6638||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:51:14.7469|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:51:14.8759|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getLoginToken (WebAPI)' 
+2020-01-06 14:51:14.8759|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getLoginToken", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getLoginToken(RabbitMQInfo) on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-01-06 14:52:06.7978|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2020-01-06 14:52:06.8048|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getLoginToken (WebAPI) in 51925.7762ms 
+2020-01-06 14:52:06.8048|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getLoginToken (WebAPI)' 
+2020-01-06 14:52:06.8048|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 52188.049300000006ms 400 application/json; charset=utf-8 
+2020-01-06 14:53:14.2997||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-01-06 14:53:15.1737|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://192.168.60.84/rabbitmqtest application/json 2 
+2020-01-06 14:53:15.4098||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:f2d9b5bd-0db5-4ba8-a920-5a2de3e55151
+ 
+2020-01-06 14:53:15.4098||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:53:15.9628|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-01-06 14:53:16.6358|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:53:17.0408|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.rabbitmqtest (WebAPI)' 
+2020-01-06 14:53:17.0788|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "rabbitmqtest", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] rabbitmqtest(RabbitMQInfo) on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-01-06 14:54:08.0278||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-01-06 14:54:11.8490|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://192.168.60.84/rabbitmqtest application/json 2 
+2020-01-06 14:54:12.0460||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:26e1d96a-efc6-44d7-af2d-99ec962232d3
+ 
+2020-01-06 14:54:12.0460||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:54:12.5890|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-01-06 14:54:13.2811|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:54:13.6891|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.rabbitmqtest (WebAPI)' 
+2020-01-06 14:54:13.7261|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "rabbitmqtest", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] rabbitmqtest(RabbitMQInfo) on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-01-06 14:54:35.3103|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2020-01-06 14:54:35.3283|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.rabbitmqtest (WebAPI) in 21597.340500000002ms 
+2020-01-06 14:54:35.3283|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.rabbitmqtest (WebAPI)' 
+2020-01-06 14:54:35.3343|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 23485.736100000002ms 200 application/json; charset=utf-8 
+2020-01-06 14:58:15.8399|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://192.168.60.84/rabbitmqtest application/json 2 
+2020-01-06 14:58:15.8819||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:bf7c255c-af1d-4500-bc97-6cec2caa4e48
+ 
+2020-01-06 14:58:15.8819||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2020-01-06 14:58:16.1600|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-01-06 14:58:16.2860|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.rabbitmqtest (WebAPI)' 
+2020-01-06 14:58:16.2860|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "rabbitmqtest", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] rabbitmqtest(RabbitMQInfo) on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-01-06 14:59:16.2224|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2020-01-06 14:59:16.2304|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.rabbitmqtest (WebAPI) in 59941.3485ms 
+2020-01-06 14:59:16.2304|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.rabbitmqtest (WebAPI)' 
+2020-01-06 14:59:16.2304|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 60391.769400000005ms 200 application/json; charset=utf-8 

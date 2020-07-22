@@ -1,0 +1,96 @@
+2019-12-24 09:40:18.9079||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:localhost
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:56
+Postman-Token:7c02d7d9-4a5f-4639-9785-77657f1d4a72
+ |url: http://localhost/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:40:18.9079||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:40:27.3734||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:41:06.0946||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:56
+Postman-Token:d6659aec-4d81-44c1-9ee4-20f00730a8ea
+ |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:41:06.0946||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:41:11.0929||INFO|WebAPI.Controllers.SysUserController|unright/getAdvanced |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: getAdvanced
+2019-12-24 09:41:22.4615||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:56
+Postman-Token:b3c17461-59ff-480d-9cdd-f72dc9521945
+ |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:41:22.4615||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:41:30.4150||INFO|WebAPI.Controllers.SysUserController|unright/getAdvanced |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: getAdvanced
+2019-12-24 09:43:58.0864||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:56
+Postman-Token:570e7cb9-ed3f-45ec-8460-8b40a78c1c4e
+ |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:43:58.0864||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:44:03.0957||INFO|WebAPI.Controllers.SysUserController|unright/getAdvanced |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: getAdvanced
+2019-12-24 09:58:11.4233||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:56
+Postman-Token:3c9c336e-76f6-40d3-8ae7-0246d1e092f4
+ |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:58:11.4233||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 09:58:26.0231||INFO|WebAPI.Controllers.SysUserController|unright/getAdvanced |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: getAdvanced
+2019-12-24 10:03:37.8629||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:56
+Postman-Token:80516842-cdf3-43c7-b951-e7d3758d6d5e
+ |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 10:03:37.8629||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 10:03:39.5810||INFO|WebAPI.Controllers.SysUserController|unright/getAdvanced |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: getAdvanced
+2019-12-24 10:04:44.4747||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:132
+Postman-Token:82b68385-952f-4b69-9bdc-0fee42d46e79
+ |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 10:04:44.4747||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: 
+2019-12-24 10:04:44.9208||INFO|WebAPI.Controllers.SysUserController|unright/getAdvanced |url: http://192.168.60.84/SysUser/unright/sqlAdvancedSelect|action: getAdvanced
+2019-12-24 10:20:55.5273||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:38
+Postman-Token:9cd39802-04af-4905-89d3-f0dac5592243
+ |url: http://192.168.60.84/ActionAccessInfo/unright/sqlAdvancedSelect|action: 
+2019-12-24 10:20:55.5273||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/ActionAccessInfo/unright/sqlAdvancedSelect|action: 
+2019-12-24 10:20:57.3564||DEBUG|CustomeAuthenticationMiddleware|/actionaccessinfo/unright/sqladvancedselect,post |url: http://192.168.60.84/ActionAccessInfo/unright/sqlAdvancedSelect|action: getAdvanced

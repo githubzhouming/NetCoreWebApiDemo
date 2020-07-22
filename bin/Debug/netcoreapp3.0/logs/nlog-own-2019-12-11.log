@@ -1,0 +1,430 @@
+2019-12-11 10:06:03.7269||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:06:04.9380||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:06:05.7530|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:06:10.4573||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:06:13.3705||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:06:13.6415|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/favicon.ico|action: 
+2019-12-11 10:06:35.1437||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:06:35.1437||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:06:35.4157|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:06:35.5027||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:06:35.5027||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:06:35.7778|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/favicon.ico|action: 
+2019-12-11 10:07:05.6085||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:07:05.6085||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:11:25.5973||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:11:25.5973||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:12:41.1227|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: SocketClosed on EVAL
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2128
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Set(String key, Byte[] value, DistributedCacheEntryOptions options)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString(IDistributedCache cache, String key, String value, DistributedCacheEntryOptions options)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.setString(IDistributedCache cache, String key, String value, TimeSpan timeSpan) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 40
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 117
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:12:41.4127||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:12:41.4127||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:14:21.2114|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/favicon.ico|action: 
+2019-12-11 10:14:26.9867||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:14:26.9867||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:15:23.8160||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:15:23.8160||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:16:53.8011|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Set(String key, Byte[] value, DistributedCacheEntryOptions options)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString(IDistributedCache cache, String key, String value, DistributedCacheEntryOptions options)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.setString(IDistributedCache cache, String key, String value, TimeSpan timeSpan) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 40
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 117
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:16:55.6372||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:16:55.6372||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:19:09.7869||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:19:19.7115||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:19:19.7115||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:19:52.4003||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:19:52.4713||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:19:52.4713||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:19:52.6333||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:21:00.0262||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 10:21:00.0262||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 10:21:08.0607||INFO|WebAPI.Controllers.SysRoleController|unright/getAll |url: http://192.168.60.84/sysrole/unright/getAll/|action: getAllEntity
+2019-12-11 10:21:08.4067||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+Referer:http://192.168.60.84/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ |url: http://192.168.60.84/favicon.ico|action: 
+2019-12-11 10:21:08.4067||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/favicon.ico|action: 
+2019-12-11 10:23:03.1162||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:03.1162||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:03.4783||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:06.2974||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:06.2974||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:06.4654||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:06.5274||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:06.5274||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:06.6914||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:10.2206||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:10.2206||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:10.3897||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:10.4497||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:10.4497||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:10.6127||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:25.2395||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:25.2395||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:40.7934||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:23:40.8544||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:40.8544||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:23:56.3393||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 10:26:22.3786||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 10:26:22.3786||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 11:03:56.4916||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 11:03:56.5536|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; SocketClosed on 119.27.177.189:4379/Interactive, origin: ProcessReadBytes, input-buffer: 0, outstanding: 4, last-read: 2253s ago, last-write: 0s ago, unanswered-write: 0s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+ ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 119.27.177.189:4379/Interactive, origin: ProcessReadBytes, input-buffer: 0, outstanding: 4, last-read: 2253s ago, last-write: 0s ago, unanswered-write: 0s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 74
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserTokenString(IDistributedCache cache, Object key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 138
+   at HttpContextAnalysisOptions.Analysis(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisOptions.cs:line 30
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/favicon.ico|action: 
+2019-12-11 11:43:32.5605||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km; ucmlskin_2018=U7_S8
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 11:43:32.5605||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 11:46:51.5778||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/sysrole/unright/getAll/|action: 
+2019-12-11 11:46:51.6629||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km; ucmlskin_2018=U7_S8
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ |url: http://localhost/favicon.ico|action: 
+2019-12-11 11:46:51.6629||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 11:48:11.4084||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 |url: http://localhost/favicon.ico|action: 
+2019-12-11 11:48:28.1074||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 11:48:28.1074||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 11:48:28.9294||DEBUG|CustomeAuthenticationMiddleware|/sysrole/unright/getall/,get |url: http://192.168.60.84/sysrole/unright/getAll/|action: getAllEntity
+2019-12-11 11:49:14.0860||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 11:49:14.0860||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 11:49:14.7350||INFO|WebAPI.Controllers.SysRoleController|unright/getAll |url: http://192.168.60.84/sysrole/unright/getAll/|action: getAllEntity
+2019-12-11 14:00:24.7232||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 14:00:24.7232||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/sysrole/unright/getAll/|action: 
+2019-12-11 14:00:25.6362||INFO|WebAPI.Controllers.SysRoleController|unright/getAll |url: http://192.168.60.84/sysrole/unright/getAll/|action: getAllEntity

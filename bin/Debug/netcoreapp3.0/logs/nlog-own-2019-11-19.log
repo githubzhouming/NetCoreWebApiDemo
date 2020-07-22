@@ -1,0 +1,91 @@
+2019-11-19 10:06:41.9781||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-19 10:06:41.9781||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-19 10:07:00.8811||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/|action: 
+2019-11-19 10:07:00.8811||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::ffff:192.168.60.84 |url: http://192.168.60.84/|action: 
+2019-11-19 10:07:01.0572||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/favicon.ico|action: 
+2019-11-19 10:07:01.0572||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::ffff:192.168.60.84 |url: http://192.168.60.84/favicon.ico|action: 
+2019-11-19 10:08:58.8569||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:08:58.8569||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:09:18.1950||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:09:18.1980||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:09:18.2930||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/favicon.ico|action: 
+2019-11-19 10:09:18.2930||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::ffff:192.168.60.84 |url: http://192.168.60.84/favicon.ico|action: 
+2019-11-19 10:12:18.5003||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:12:36.6514||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:13:59.8841||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:15:18.5086||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:15:43.5550||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:16:57.7513||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:18:34.6368||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:19:43.4988||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:20:35.8158||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:23:15.4839||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:23:30.6068||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:24:36.6615||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:24:58.9328||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:26:00.3553||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:27:26.4152||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:31:39.3677||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:32:58.5502||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:33:39.7346||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:34:58.1421||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:34:58.2321||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:35:37.6003||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:35:37.6893||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:37:08.9286||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:37:09.0186||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:37:36.6301||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:37:36.7192||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:39:19.5260||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:39:19.6160||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:46:20.7761||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:46:20.8681||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:54:57.5427||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:54:57.6347||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:55:02.5170||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-19 10:55:02.6900||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/jsapiinfo,get |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: GetJSApiInfo
+2019-11-19 10:55:37.6800||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:55:37.7700||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:56:30.5670||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-19 10:56:31.7441||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/jsapiinfo,get |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: GetJSApiInfo
+2019-11-19 10:56:33.4492||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:56:33.5372||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 10:56:40.5926||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-19 17:39:02.8644||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 17:39:53.0463||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 17:46:40.7506||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 17:48:31.9360||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 17:48:48.3919||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 17:54:21.1170||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 17:54:22.3270||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/|action: 
+2019-11-19 17:54:22.4920||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/favicon.ico|action: 
+2019-11-19 17:54:34.8267||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 17:54:34.9237||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 17:54:36.5788||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/WeChatBaseAPI/jsapiinfo|action: 
+2019-11-19 18:40:35.0976||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:40:35.2486||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:40:36.5717||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:41:16.8430||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:41:16.9290||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:41:17.4120||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:42:25.2559||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:42:25.3469||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:42:26.0210||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:43:25.9564||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:43:26.0434||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:43:26.7384||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:44:04.4836||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:44:04.5726||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:44:05.0296||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:44:51.0583||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:44:51.1463||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:44:51.6053||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:45:45.9664||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:45:46.0524||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:45:46.5524||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:46:12.2819||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:46:12.3679||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:46:12.8309||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 
+2019-11-19 18:46:53.7883||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:46:53.8743||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/token/login/getToken|action: 
+2019-11-19 18:46:54.3373||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:192.168.60.84 |url: http://192.168.60.84/BaiduTransBaseAPI/translate|action: 

@@ -1,0 +1,83 @@
+2020-01-06 14:47:18.4723||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:47:18.4723||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:47:20.9885||DEBUG|CustomeAuthenticationMiddleware|/rabbitmqtest,get |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:47:21.2225||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+Referer:http://192.168.60.84/rabbitmqtest
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ |url: http://192.168.60.84/favicon.ico|action: 
+2020-01-06 14:47:21.2225||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/favicon.ico|action: 
+2020-01-06 14:49:29.1628||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:49:29.1658||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:50:22.6579||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:0
+Postman-Token:5d25c3b4-11e2-4138-9d00-52bfad03d9a7
+ |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:50:22.6599||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:51:14.6638||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:3ca9cb1d-b985-457c-92de-5b33f9975a59
+ |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:51:14.6638||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:53:15.4098||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:f2d9b5bd-0db5-4ba8-a920-5a2de3e55151
+ |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:53:15.4098||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:54:12.0460||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:26e1d96a-efc6-44d7-af2d-99ec962232d3
+ |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:54:12.0460||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:58:15.8819||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Content-Type:application/json
+Accept:*/*
+Accept-Encoding:gzip, deflate
+Host:192.168.60.84
+User-Agent:PostmanRuntime/7.21.0
+Content-Length:2
+Postman-Token:bf7c255c-af1d-4500-bc97-6cec2caa4e48
+ |url: http://192.168.60.84/rabbitmqtest|action: 
+2020-01-06 14:58:15.8819||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 |url: http://192.168.60.84/rabbitmqtest|action: 

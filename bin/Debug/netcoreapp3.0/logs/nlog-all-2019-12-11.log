@@ -1,0 +1,775 @@
+2019-12-11 10:04:30.1836||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-11 10:05:55.1864|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:06:03.7269||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:06:04.9380||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:06:05.7530|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 10:06:05.8200|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 10634.9509ms 500 text/html; charset=utf-8 
+2019-12-11 10:06:06.0471|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:06:10.4573||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:06:13.3705||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:06:13.6415|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 10:06:13.6415|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 7595.7187ms 500 text/plain 
+2019-12-11 10:06:35.0997|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:06:35.1437||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:06:35.1437||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:06:35.4157|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 10:06:35.4157|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 326.1533ms 500 text/html; charset=utf-8 
+2019-12-11 10:06:35.4607|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:06:35.5027||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:06:35.5027||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:06:35.7778|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 10:06:35.7778|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 318.9187ms 500 text/plain 
+2019-12-11 10:07:05.5665|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:07:05.6085||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:07:05.6085||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:11:20.4230||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-11 10:11:25.2773|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:11:25.5973||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:11:25.5973||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:12:41.1227|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: SocketClosed on EVAL
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2128
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Set(String key, Byte[] value, DistributedCacheEntryOptions options)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString(IDistributedCache cache, String key, String value, DistributedCacheEntryOptions options)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.setString(IDistributedCache cache, String key, String value, TimeSpan timeSpan) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 40
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 117
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 10:12:41.1637|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 75885.74070000001ms 500 text/html; charset=utf-8 
+2019-12-11 10:12:41.3747|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:12:41.4127||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:12:41.4127||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:14:21.2114|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'country'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 110
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 10:14:21.2114|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 99838.7467ms 500 text/plain 
+2019-12-11 10:14:26.9457|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:14:26.9867||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:14:26.9867||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:15:18.6557||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-11 10:15:23.4709|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:15:23.8160||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:15:23.8160||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:16:53.8011|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Set(String key, Byte[] value, DistributedCacheEntryOptions options)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString(IDistributedCache cache, String key, String value, DistributedCacheEntryOptions options)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.setString(IDistributedCache cache, String key, String value, TimeSpan timeSpan) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 40
+   at IPCheckOptions.CheakIp(HttpContext context, String ip) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckOptions.cs:line 117
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 45
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 10:16:53.8401|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 90369.4758ms 500 text/html; charset=utf-8 
+2019-12-11 10:16:53.9821|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:16:55.6372||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:16:55.6372||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:19:08.4758|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-12-11 10:19:09.5659|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:19:09.7869||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:19:09.7919|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 135807.3857ms 200 application/json; charset=utf-8 
+2019-12-11 10:19:19.6695|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:19:19.7115||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:19:19.7115||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:19:52.3153|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:19:52.4003||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:19:52.4003|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 32732.347100000003ms 200 application/json; charset=utf-8 
+2019-12-11 10:19:52.4323|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:19:52.4713||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:19:52.4713||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:19:52.5503|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:19:52.6333||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:19:52.6333|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 203.221ms 200 application/json; charset=utf-8 
+2019-12-11 10:20:59.9862|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:21:00.0262||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2019-12-11 10:21:00.0262||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2019-12-11 10:21:00.4172|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:21:08.0037|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI)' 
+2019-12-11 10:21:08.0607|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getAllEntity", controller = "SysRole"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getAllEntity() on controller WebAPI.Controllers.SysRoleController (WebAPI). 
+2019-12-11 10:21:08.0607||INFO|WebAPI.Controllers.SysRoleController|unright/getAll 
+2019-12-11 10:21:08.1337|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-12-11 10:21:08.2477|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-12-11 10:21:08.3217|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI) in 256.5486ms 
+2019-12-11 10:21:08.3217|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI)' 
+2019-12-11 10:21:08.3217|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 8341.1621ms 200 application/json; charset=utf-8 
+2019-12-11 10:21:08.3677|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/favicon.ico   
+2019-12-11 10:21:08.4067||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+Referer:http://192.168.60.84/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ 
+2019-12-11 10:21:08.4067||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2019-12-11 10:21:08.6037|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:21:08.6967|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 329.3638ms 404  
+2019-12-11 10:23:03.0762|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:23:03.1162||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:23:03.1162||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:23:03.3923|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:23:03.4783||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:23:03.4803|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 403.53520000000003ms 200 application/json; charset=utf-8 
+2019-12-11 10:23:06.2574|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:23:06.2974||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:23:06.2974||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:23:06.3804|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:23:06.4654||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:23:06.4654|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 210.40200000000002ms 200 application/json; charset=utf-8 
+2019-12-11 10:23:06.4874|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:23:06.5274||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:no-cache
+Connection:keep-alive
+Pragma:no-cache
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:23:06.5274||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:23:06.6064|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:23:06.6914||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:23:06.6924|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 204.73000000000002ms 200 application/json; charset=utf-8 
+2019-12-11 10:23:10.1806|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:23:10.2206||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:23:10.2206||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:23:10.3026|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:23:10.3897||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:23:10.3897|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 210.99470000000002ms 200 application/json; charset=utf-8 
+2019-12-11 10:23:10.4107|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:23:10.4497||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:23:10.4497||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:23:10.5297|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:23:10.6127||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:23:10.6127|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 203.1357ms 200 application/json; charset=utf-8 
+2019-12-11 10:23:25.1985|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:23:25.2395||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:23:25.2395||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:23:40.7074|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:23:40.7934||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:23:40.7954|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 15596.0337ms 200 application/json; charset=utf-8 
+2019-12-11 10:23:40.8154|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 10:23:40.8544||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 10:23:40.8544||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 10:23:56.2563|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 10:23:56.3393||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 10:23:56.3393|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 15525.654100000002ms 200 application/json; charset=utf-8 
+2019-12-11 10:26:22.3376|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 10:26:22.3786||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 10:26:22.3786||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 11:03:56.4066|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 11:03:56.4916||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 11:03:56.4916|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2254125.1950000003ms 200 application/json; charset=utf-8 
+2019-12-11 11:03:56.5196|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 11:03:56.5536|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; SocketClosed on 119.27.177.189:4379/Interactive, origin: ProcessReadBytes, input-buffer: 0, outstanding: 4, last-read: 2253s ago, last-write: 0s ago, unanswered-write: 0s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+ ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 119.27.177.189:4379/Interactive, origin: ProcessReadBytes, input-buffer: 0, outstanding: 4, last-read: 2253s ago, last-write: 0s ago, unanswered-write: 0s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 74
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserTokenString(IDistributedCache cache, Object key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 138
+   at HttpContextAnalysisOptions.Analysis(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisOptions.cs:line 30
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-12-11 11:03:56.5536|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 37.080600000000004ms 500 text/plain 
+2019-12-11 11:43:14.2674||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-11 11:43:32.3755|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 11:43:32.5605||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km; ucmlskin_2018=U7_S8
+Host:localhost
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+Sec-Fetch-User:?1
+Sec-Fetch-Site:none
+Sec-Fetch-Mode:navigate
+ 
+2019-12-11 11:43:32.5605||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 11:43:46.0012|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-12-11 11:46:51.4238|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 11:46:51.5778||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 11:46:51.5878|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 199210.774ms 200 application/json; charset=utf-8 
+2019-12-11 11:46:51.6238|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-12-11 11:46:51.6629||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cookie:ASP.NET_SessionId=hikhzevh3zzq5vaw0u0qf1km; ucmlskin_2018=U7_S8
+Host:localhost
+Referer:http://localhost/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Sec-Fetch-Site:same-origin
+Sec-Fetch-Mode:no-cors
+ 
+2019-12-11 11:46:51.6629||DEBUG|IPCheckMiddleware|Request from Remote IP address: 0.0.0.1 
+2019-12-11 11:48:11.3154|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 11:48:11.4084||DEBUG|IPCheckMiddleware|URL is not on the whitelist: 0.0.0.1 
+2019-12-11 11:48:11.4084|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 79785.54830000001ms 200 application/json; charset=utf-8 
+2019-12-11 11:48:28.0674|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/sysrole/unright/getAll/?tokekey=94670F0F97190D19EB9719EC26BAF884   
+2019-12-11 11:48:28.1074||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2019-12-11 11:48:28.1074||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2019-12-11 11:48:28.3044|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 11:48:28.5874|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-12-11 11:48:28.8354|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([ActionAccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [ActionAccessInfo] USING (
+VALUES (@p0, 0)) AS i ([RequestKey], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([RequestKey])
+VALUES (i.[RequestKey])
+OUTPUT INSERTED.[ActionAccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[ActionAccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [ActionAccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[ActionAccessInfoId] = [i].[ActionAccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 11:48:28.9294||DEBUG|CustomeAuthenticationMiddleware|/sysrole/unright/getall/,get 
+2019-12-11 11:48:28.9294|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 865.4031ms 200 application/json; charset=utf-8 
+2019-12-11 11:49:14.0020|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/sysrole/unright/getAll/?tokekey=CC6533D2B2BFEA293156EEB00F2A01F1   
+2019-12-11 11:49:14.0860||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2019-12-11 11:49:14.0860||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2019-12-11 11:49:14.3940|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 11:49:14.7100|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI)' 
+2019-12-11 11:49:14.7350|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getAllEntity", controller = "SysRole"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getAllEntity() on controller WebAPI.Controllers.SysRoleController (WebAPI). 
+2019-12-11 11:49:14.7350||INFO|WebAPI.Controllers.SysRoleController|unright/getAll 
+2019-12-11 11:49:14.7740|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-12-11 11:49:14.8250|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-12-11 11:49:14.8560|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI) in 114.64280000000001ms 
+2019-12-11 11:49:14.8560|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI)' 
+2019-12-11 11:49:14.8560|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 858.2093ms 200 application/json; charset=utf-8 
+2019-12-11 14:00:24.6812|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.84/sysrole/unright/getAll/?tokekey=DD09F2949FFA3E43D4B909FC0942E66F   
+2019-12-11 14:00:24.7232||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.84
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2019-12-11 14:00:24.7232||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.84 
+2019-12-11 14:00:25.2972|20100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2019-12-11 14:00:25.6362|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI)' 
+2019-12-11 14:00:25.6362|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getAllEntity", controller = "SysRole"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getAllEntity() on controller WebAPI.Controllers.SysRoleController (WebAPI). 
+2019-12-11 14:00:25.6362||INFO|WebAPI.Controllers.SysRoleController|unright/getAll 
+2019-12-11 14:00:25.6362|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-12-11 14:00:25.6872|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-12-11 14:00:25.6872|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI) in 51.4253ms 
+2019-12-11 14:00:25.6872|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.SysRoleController.getAllEntity (WebAPI)' 
+2019-12-11 14:00:25.6872|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1010.3803ms 200 application/json; charset=utf-8 

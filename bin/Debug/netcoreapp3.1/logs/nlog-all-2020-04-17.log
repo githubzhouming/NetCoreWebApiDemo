@@ -1,0 +1,186 @@
+2020-04-17 15:51:04.3515||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-04-17 15:51:14.4661|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.181/env   
+2020-04-17 15:51:14.6741||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2020-04-17 15:51:14.6741||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 
+2020-04-17 15:51:15.2592|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.3 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-04-17 15:51:16.1122|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (99ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-04-17 15:51:16.4602|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.3 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-04-17 15:51:16.5962|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 15:51:16.6312|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getEnv", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getEnv() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-04-17 15:57:01.3930|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2020-04-17 15:57:01.4210|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getEnv (WebAPI) in 344780.2625ms 
+2020-04-17 15:57:01.4210|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 15:57:01.4300|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 346961.7311ms 200 application/json; charset=utf-8 
+2020-04-17 15:57:01.4990|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.181/favicon.ico   
+2020-04-17 15:57:01.5390||DEBUG|IPCheckMiddleware|Request from HeadConnection:keep-alive
+Accept:image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+Referer:http://192.168.60.181/env
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+ 
+2020-04-17 15:57:01.5390||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 
+2020-04-17 15:57:01.6640|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-04-17 15:57:01.7380|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 238.9723ms 404  
+2020-04-17 15:57:47.9436||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-04-17 15:57:56.5391|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.181/env   
+2020-04-17 15:57:56.7231||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2020-04-17 15:57:56.7231||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 
+2020-04-17 15:57:57.2922|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.3 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-04-17 15:57:58.0712|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (99ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-04-17 15:57:58.3822|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 15:57:58.4072|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getEnv", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getEnv() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-04-17 16:02:47.8618||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-04-17 16:02:54.2221|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.181/env   
+2020-04-17 16:02:54.4151||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2020-04-17 16:02:54.4151||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 
+2020-04-17 16:02:54.9992|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.3 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-04-17 16:02:55.7892|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (96ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-04-17 16:02:56.1022|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 16:02:56.1282|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getEnv", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getEnv() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-04-17 16:04:01.4370|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2020-04-17 16:04:01.4600|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getEnv (WebAPI) in 65327.1736ms 
+2020-04-17 16:04:01.4630|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 16:04:01.4630|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 67246.3198ms 200 application/json; charset=utf-8 
+2020-04-17 16:05:02.9925||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-04-17 16:05:07.4218|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.181/env   
+2020-04-17 16:05:07.6128||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2020-04-17 16:05:07.6128||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 
+2020-04-17 16:05:08.2088|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.3 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-04-17 16:05:08.9978|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (98ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-04-17 16:05:09.3329|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 16:05:09.3579|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getEnv", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getEnv() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-04-17 16:05:16.7613|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2020-04-17 16:05:16.7913|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getEnv (WebAPI) in 7426.2854ms 
+2020-04-17 16:05:16.7943|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 16:05:16.7943|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 9378.662ms 200 application/json; charset=utf-8 
+2020-04-17 16:06:31.4906||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-04-17 16:06:33.8987|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://192.168.60.181/env   
+2020-04-17 16:06:34.0837||DEBUG|IPCheckMiddleware|Request from HeadCache-Control:max-age=0
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.9
+Host:192.168.60.181
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+Upgrade-Insecure-Requests:1
+ 
+2020-04-17 16:06:34.0837||DEBUG|IPCheckMiddleware|Request from Remote IP address: 192.168.60.181 
+2020-04-17 16:06:34.6487|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.3 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-04-17 16:06:35.4448|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (105ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Boolean), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 500) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (Size = 8000) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([AccessInfoId] uniqueidentifier, [_Position] [int]);
+MERGE [AccessInfo] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 0)) AS i ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Ip], [IsBlocked], [Method], [Path], [RequestKey], [SysUserId], [Url])
+VALUES (i.[Ip], i.[IsBlocked], i.[Method], i.[Path], i.[RequestKey], i.[SysUserId], i.[Url])
+OUTPUT INSERTED.[AccessInfoId], i._Position
+INTO @inserted0;
+
+SELECT [t].[AccessInfoId], [t].[createdOn], [t].[modifiedOn], [t].[VerCol] FROM [AccessInfo] t
+INNER JOIN @inserted0 i ON ([t].[AccessInfoId] = [i].[AccessInfoId])
+ORDER BY [i].[_Position]; 
+2020-04-17 16:06:35.7658|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 16:06:35.7928|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getEnv", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getEnv() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2020-04-17 16:06:41.6001|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2020-04-17 16:06:41.6331|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getEnv (WebAPI) in 5834.2074ms 
+2020-04-17 16:06:41.6331|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getEnv (WebAPI)' 
+2020-04-17 16:06:41.6331|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 7740.1171ms 200 application/json; charset=utf-8 

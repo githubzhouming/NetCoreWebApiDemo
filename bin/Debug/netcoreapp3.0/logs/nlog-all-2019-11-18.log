@@ -1,0 +1,177 @@
+2019-11-18 12:04:14.9053||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-18 12:04:15.0313|58|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Creating key {2ff95f5f-dd6b-40dc-811e-46ca85e7697a} with creation date 2019-11-18 04:04:15Z, activation date 2019-11-19 02:48:37Z, and expiration date 2020-02-16 04:04:14Z. 
+2019-11-18 12:04:15.0993|39|INFO|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Writing data to file 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys\key-2ff95f5f-dd6b-40dc-811e-46ca85e7697a.xml'. 
+2019-11-18 14:21:48.4073||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-18 14:22:07.2234|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/accesstoken?tokekey=826B1AF1025B6118B00F2E48623BE2B7   
+2019-11-18 14:22:07.7964||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 14:22:07.8144||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::1 
+2019-11-18 14:22:07.8394|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 617.3591ms 200 application/json; charset=utf-8 
+2019-11-18 14:22:07.9254|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-11-18 14:22:08.0044||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 14:22:08.0044||DEBUG|IPCheckMiddleware|URL is not on the whitelist: ::1 
+2019-11-18 14:22:08.0044|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 81.028ms 200 application/json; charset=utf-8 
+2019-11-18 14:30:13.3302|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/accesstoken?tokekey=826B1AF1025B6118B00F2E48623BE2B7   
+2019-11-18 14:30:13.8122|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 14:30:14.4703||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 14:30:14.7033|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-18 14:30:14.7273|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 14:31:20.1430|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 14:31:20.1610|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI) in 65427.142ms 
+2019-11-18 14:31:20.1610|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-18 14:31:20.1610|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 66833.0304ms 400 application/json; charset=utf-8 
+2019-11-18 14:31:20.1680|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-11-18 14:31:20.3370|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserCacheString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 38
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserTokenCacheString(IDistributedCache cache, Object key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 70
+   at HttpContextAnalysisOptions.Analysis(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisOptions.cs:line 29
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-18 14:31:20.3760|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 208.41850000000002ms 500 text/plain 
+2019-11-18 14:33:40.4241|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/accesstoken?tokekey=826B1AF1025B6118B00F2E48623BE2B7   
+2019-11-18 14:33:40.5051||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 14:33:40.5941|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-18 14:33:40.5941|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 14:34:10.5008|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 14:34:10.5058|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI) in 29908.4514ms 
+2019-11-18 14:34:10.5058|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-18 14:34:10.5058|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 30084.2043ms 400 application/json; charset=utf-8 
+2019-11-18 14:34:10.5208|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-11-18 14:34:10.5528|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 12s ago, last-write: 12s ago, unanswered-write: 20506s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+ ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 12s ago, last-write: 12s ago, unanswered-write: 20506s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserCacheString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 38
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserTokenCacheString(IDistributedCache cache, Object key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 70
+   at HttpContextAnalysisOptions.Analysis(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisOptions.cs:line 29
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-18 14:34:10.5528|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 34.9226ms 500 text/plain 
+2019-11-18 14:34:15.0710|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/accesstoken?tokekey=826B1AF1025B6118B00F2E48623BE2B7   
+2019-11-18 14:34:15.1540||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 14:34:15.2350|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-18 14:34:15.2350|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 16:08:48.1889||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-18 16:09:02.6748|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/info   
+2019-11-18 16:09:03.3868|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 16:09:03.9708||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:09:04.1849|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 16:09:04.2879|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-18 16:09:04.3119|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getWebInfo", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getWebInfo() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2019-11-18 16:09:04.3119|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 16:09:04.3359|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getWebInfo (WebAPI) in 19.4263ms 
+2019-11-18 16:09:04.3379|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-18 16:09:04.3379|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1666.7055ms 200 application/json; charset=utf-8 
+2019-11-18 16:09:04.4549|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-11-18 16:09:04.5349||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:09:04.5459|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 90.26400000000001ms 404  
+2019-11-18 16:09:25.5261|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/info   
+2019-11-18 16:09:25.6061||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:09:25.7561|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 3s ago, last-write: 3s ago, unanswered-write: 26221s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+ ---> StackExchange.Redis.RedisConnectionException: SocketClosed on 119.27.177.189:4379/Subscription, origin: ProcessReadBytes, input-buffer: 0, outstanding: 0, last-read: 3s ago, last-write: 3s ago, unanswered-write: 26221s ago, keep-alive: 60s, pending: 0, state: ConnectedEstablished, in: 0, ar: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2027
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGet(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString(IDistributedCache cache, String key)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.getUserCacheString(IDistributedCache cache, Object userid, String key) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 38
+   at CustomeAuthenticationOptions.getPatternList(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 30
+   at CustomeAuthenticationOptions.ignorePath(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 79
+   at CustomeAuthenticationMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationMiddleware.cs:line 33
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 49
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-18 16:09:25.8301|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 304.55ms 500 text/html; charset=utf-8 
+2019-11-18 16:09:44.2301|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/info   
+2019-11-18 16:09:44.3091||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:09:44.3502|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-18 16:09:44.3512|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getWebInfo", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getWebInfo() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2019-11-18 16:10:09.6406|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 16:10:09.6406|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getWebInfo (WebAPI) in 25295.741ms 
+2019-11-18 16:10:09.6406|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-18 16:10:09.6406|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 25420.522ms 200 application/json; charset=utf-8 
+2019-11-18 16:11:17.6005||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-18 16:11:57.8718|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/info   
+2019-11-18 16:11:58.2228||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:11:58.4368|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-18 16:11:58.4628|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getWebInfo", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getWebInfo() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2019-11-18 16:12:00.4819|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 16:12:00.5009|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getWebInfo (WebAPI) in 2032.3253000000002ms 
+2019-11-18 16:12:00.5009|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-18 16:12:00.5009|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2635.7202ms 200 application/json; charset=utf-8 
+2019-11-18 16:12:20.9701|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo   
+2019-11-18 16:12:21.0501||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:12:21.5031|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 16:12:22.0772||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/jsapiinfo,get 
+2019-11-18 16:12:22.1972|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1226.7171ms 200 application/json; charset=utf-8 
+2019-11-18 16:13:37.5765|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo?tokekey=4C74EB11E2772EE21AE796DA326B6852   
+2019-11-18 16:13:37.7085|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 16:13:37.9985||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:13:38.0865|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:13:38.0895|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetJSApiInfo", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetJSApiInfo() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 16:13:50.1332|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 16:13:50.1332|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI) in 12044.9642ms 
+2019-11-18 16:13:50.1332|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:13:50.1332|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 12561.271700000001ms 400 application/json; charset=utf-8 
+2019-11-18 16:14:15.9427|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo?tokekey=4C74EB11E2772EE21AE796DA326B6852   
+2019-11-18 16:14:16.0237||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:14:16.1107|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:14:16.1107|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetJSApiInfo", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetJSApiInfo() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 16:22:53.7483||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-18 16:23:00.4897|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo?tokekey=4C74EB11E2772EE21AE796DA326B6852   
+2019-11-18 16:23:01.0147||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:23:01.5768|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 16:23:02.2868|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:23:02.3108|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetJSApiInfo", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetJSApiInfo() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 16:23:22.1929|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 16:23:22.2159|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI) in 19897.9512ms 
+2019-11-18 16:23:22.2159|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:23:22.2199|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 21729.839500000002ms 400 application/json; charset=utf-8 
+2019-11-18 16:25:33.5194|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo?tokekey=4C74EB11E2772EE21AE796DA326B6852   
+2019-11-18 16:25:33.5994||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 16:25:33.6875|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:25:33.6875|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetJSApiInfo", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetJSApiInfo() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 16:27:10.3570||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-18 16:27:10.5710|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo?tokekey=4C74EB11E2772EE21AE796DA326B6852   
+2019-11-18 16:27:11.0850||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::ffff:127.0.0.1 
+2019-11-18 16:27:11.3300|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:27:11.3550|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetJSApiInfo", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetJSApiInfo() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 16:27:50.2813|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 16:27:50.3123|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI) in 38951.8816ms 
+2019-11-18 16:27:50.3123|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 16:27:50.3123|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 39745.5045ms 200 application/json; charset=utf-8 
+2019-11-18 17:44:17.8247||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-18 17:45:07.7785|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo?tokekey=4C74EB11E2772EE21AE796DA326B6852&thisurl=http%3A%2F%2Flocalhost%2FWeChatBaseAPI%2Fjsapiinfo%3Ftokekey%3D4C74EB11E2772EE21AE796DA326B6852   
+2019-11-18 17:45:08.1425||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 17:45:08.7686|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 17:45:09.3486||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/jsapiinfo,get 
+2019-11-18 17:45:09.4826|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1705.1063000000001ms 200 application/json; charset=utf-8 
+2019-11-18 17:45:09.5846|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/favicon.ico   
+2019-11-18 17:45:09.6646||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 17:45:09.6796|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 95.1132ms 404  
+2019-11-18 17:45:42.0445|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/jsapiinfo?tokekey=DC84DC134D184435981F74319B41060E&thisurl=http%3A%2F%2Flocalhost%2FWeChatBaseAPI%2Fjsapiinfo%3Ftokekey%3D4C74EB11E2772EE21AE796DA326B6852   
+2019-11-18 17:45:42.1805|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-18 17:45:42.2725||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-18 17:45:42.5165|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 17:45:42.5425|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetJSApiInfo", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetJSApiInfo() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-18 17:46:00.8335|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-18 17:46:00.8555|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI) in 18306.0726ms 
+2019-11-18 17:46:00.8555|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.GetJSApiInfo (WebAPI)' 
+2019-11-18 17:46:00.8555|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 18814.2706ms 200 application/json; charset=utf-8 

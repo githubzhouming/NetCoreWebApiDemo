@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="msg">
+
+    </div>
+    <script src="js/jquery/jquery.3.2.1min.js"></script>
+    <script type="text/javascript">
+        function setCookie(name, value) {
+            var minute = 90;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + minute * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+        function delCookie(name) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null)
+                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+        }
+        debugger;
+
+        function getToken(u, p) {
+            $.ajax({
+                type: 'POST', // 获取头信息，type=HEAD即可
+                url: "/api/Token/getToken",
+                dataType: "json",
+                data: JSON.stringify({ name: u, password: p }),
+                beforeSend: function (request) {
+                    request.setRequestHeader("Content-Type", "application/json");
+                },
+                complete: function (xhr, data) {
+                    debugger;
+                    if (xhr.status == 200) {
+                        if (xhr.responseJSON.resultCode == 0) {
+                            setCookie("jwtToken", xhr.responseJSON.resultBody);
+                        } else {
+                            alert(xhr.responseText);
+                        }
+                    }
+                    else {
+                        alert(xhr.xhr.responseText);
+                    }
+                }
+            });
+        }
+
+        var jwtToken = getCookie("jwtToken");
+        if (jwtToken == null || jwtToken == "" || jwtToken == "undefined") {
+            getToken("小明", "123456");
+        }
+        setTimeout("getData()", 1000);
+        function getData() {
+            debugger;
+            var jwtToken = getCookie("jwtToken");
+            if (jwtToken == null || jwtToken == "" || jwtToken == "undefined") {
+                setTimeout("getData()", 1000);
+            }
+
+            $.ajax({
+                type: 'GET', // 获取头信息，type=HEAD即可
+                url: "/api/SysUser/getAll",
+                dataType: "json",
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", "Bearer " + jwtToken);
+                },
+                complete: function (xhr, data) {
+                    debugger;
+                    if (xhr.status == 401) {
+                        var autoInfo = xhr.getResponseHeader('WWW-Authenticate');
+                        var result = xhr.getResponseHeader('result');
+                        result = decodeURIComponent(result);
+                        $("#msg").text("autoInfo=" + autoInfo + "<br/>" + "result=" + result);
+                    }
+                    else if (xhr.status == 200) {
+                        if (xhr.responseJSON.resultCode == 0) {
+                            $("#msg").text(JSON.stringify( xhr.responseJSON.resultBody));
+                        } else {
+                            alert(xhr.responseText);
+                        }
+                    }
+                    else {
+                        alert(xhr.xhr.responseText);
+                    }
+                }
+            });
+        }
+
+
+    </script>
+</body>
+</html>

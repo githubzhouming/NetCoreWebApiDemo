@@ -1,0 +1,344 @@
+2019-11-14 15:40:11.2516||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 16:47:29.7576||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 16:47:42.5203|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/   
+2019-11-14 16:47:42.8663||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:47:42.8913|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/index.html'. Physical path: 'E:\mywork\testcode\WebAPI\WebAPI\wwwroot\index.html' 
+2019-11-14 16:47:42.8913|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 372.7848ms 200 text/html 
+2019-11-14 16:48:31.4001|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken?5BCF191A76E348C5F631FA4151B6882D   
+2019-11-14 16:48:31.4871||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:48:32.0631|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-14 16:48:32.6352||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken,get 
+2019-11-14 16:48:32.7562|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1356.6698000000001ms 200 application/json; charset=utf-8 
+2019-11-14 16:48:43.1508|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?5BCF191A76E348C5F631FA4151B6882D   
+2019-11-14 16:48:43.2298||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:48:43.3948||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:48:43.3948|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 246.3082ms 200 application/json; charset=utf-8 
+2019-11-14 16:49:03.1559|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?5BCF191A76E348C5F631FA4151B6882D   
+2019-11-14 16:49:03.2399||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:49:03.5169||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:49:03.5169|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 364.2292ms 200 application/json; charset=utf-8 
+2019-11-14 16:49:05.2810|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?5BCF191A76E348C5F631FA4151B6882D   
+2019-11-14 16:49:05.3591||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:49:05.5481||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:49:05.5481|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 268.88890000000004ms 200 application/json; charset=utf-8 
+2019-11-14 16:50:11.9839|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?5BCF191A76E348C5F631FA4151B6882D   
+2019-11-14 16:50:12.0629||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:50:55.3983||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:50:55.3983|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 43418.3369ms 200 application/json; charset=utf-8 
+2019-11-14 16:51:06.3210|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?5BCF191A76E348C5F631FA4151B6882D   
+2019-11-14 16:51:06.4000||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:51:33.8415||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:51:33.8485|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 27526.3228ms 200 application/json; charset=utf-8 
+2019-11-14 16:52:16.3060|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?5BCF191A76E348C5F631FA4151B6882D   
+2019-11-14 16:52:16.3850||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:53:50.5434|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:54:05.8732||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:54:08.4854|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. StackExchange.Redis.RedisTimeoutException: Timeout performing EVAL, inst: 0, queue: 0, qu: 0, qs: 0, qc: 0, wr: 0, wq: 0, in: 0, ar: 0, clientName: ZHOUMING, serverEndpoint: 119.27.177.189:6379, keyHashSlot: 16177 (Please take a look at this article for some common client-side issues that can cause timeouts: http://stackexchange.github.io/StackExchange.Redis/Timeouts)
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 2120
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisBase.cs:line 81
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisDatabase.cs:line 1052
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Set(String key, Byte[] value, DistributedCacheEntryOptions options)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString(IDistributedCache cache, String key, String value, DistributedCacheEntryOptions options)
+   at ZM.Extensions.IDistributedCacheEx.IDistributedCacheDataExtensions.setUserCacheString(IDistributedCache cache, Object userid, String key, String value, DistributedCacheEntryOptions options) in e:\mywork\testcode\WebAPI\WebAPI\Extensions\IDistributedCacheDataExtensions.cs:line 44
+   at CustomeAuthenticationOptions.getUserActionList(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 66
+   at CustomeAuthenticationOptions.checkAction(HttpContext context, String& result) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationOptions.cs:line 95
+   at CustomeAuthenticationMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\CustomeAuthentication\CustomeAuthenticationMiddleware.cs:line 35
+   at IPCheckMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\IPCheck\IPCheckMiddleware.cs:line 49
+   at HttpContextAnalysisMiddleware.Invoke(HttpContext context) in e:\mywork\testcode\WebAPI\WebAPI\Middleware\HttpContextAnalysis\HttpContextAnalysisMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-14 16:54:10.6255||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:54:10.6255|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 20083.6928ms 200 application/json; charset=utf-8 
+2019-11-14 16:54:10.7185|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 114410.95420000001ms 500 text/html; charset=utf-8 
+2019-11-14 16:54:21.1511|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?tokenkey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:54:21.2301||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:54:21.3981||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:54:21.3981|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 249.07070000000002ms 200 application/json; charset=utf-8 
+2019-11-14 16:54:34.6839|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?tokenkey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:54:54.6490||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:54:54.8100||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:54:54.8100|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 20128.1505ms 200 application/json; charset=utf-8 
+2019-11-14 16:54:58.0532|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:54:58.1762|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-14 16:54:58.2592||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:54:58.5032|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 449.80060000000003ms 404  
+2019-11-14 16:55:23.5497|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:55:23.6317||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:55:23.7117|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 161.6002ms 404  
+2019-11-14 16:55:34.4153||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 16:55:40.2826|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:55:40.7847||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:55:41.0367|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 754.8851000000001ms 404  
+2019-11-14 16:56:11.4184|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:56:11.4984||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:56:11.5834|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 164.9413ms 404  
+2019-11-14 16:56:22.9491|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:56:23.0291||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:56:23.1151|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 165.55200000000002ms 404  
+2019-11-14 16:56:27.5953|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:56:27.6834||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:56:27.7674|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 173.03570000000002ms 404  
+2019-11-14 16:57:09.2707|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:57:09.3507||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:57:09.4357|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 170.71620000000001ms 404  
+2019-11-14 16:58:11.8493||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 16:58:18.5087|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/?tokekey=2F21ACEC02B353ED5CBF668EF117864F   
+2019-11-14 16:58:19.0187||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:58:19.2567|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 748.4759ms 404  
+2019-11-14 16:59:00.1611|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/   
+2019-11-14 16:59:00.2421||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:59:00.6721|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-14 16:59:01.2431||DEBUG|CustomeAuthenticationMiddleware|/wechatapi/accesstoken/,get 
+2019-11-14 16:59:01.2651|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1103.7541ms 200 application/json; charset=utf-8 
+2019-11-14 16:59:55.5552|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/   
+2019-11-14 16:59:55.6442||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 16:59:55.7763|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 220.8698ms 404  
+2019-11-14 17:01:24.3083||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:01:28.4016|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/   
+2019-11-14 17:01:28.7576||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:01:28.9556|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 554.8756000000001ms 404  
+2019-11-14 17:01:30.2197|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatAPI/accesstoken/   
+2019-11-14 17:01:30.3007||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:01:30.3437|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 124.1233ms 404  
+2019-11-14 17:02:09.5339|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/env   
+2019-11-14 17:02:09.6189||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:02:10.0519|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-14 17:02:10.6060||DEBUG|CustomeAuthenticationMiddleware|/env,get 
+2019-11-14 17:02:10.7280|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1193.9598ms 200 application/json; charset=utf-8 
+2019-11-14 17:02:43.8679|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/env   
+2019-11-14 17:02:43.9539||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:02:53.5304||DEBUG|CustomeAuthenticationMiddleware|/env,get 
+2019-11-14 17:02:53.5304|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 9664.2522ms 200 application/json; charset=utf-8 
+2019-11-14 17:02:57.6607|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/evn   
+2019-11-14 17:02:57.7437||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:02:57.7847|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 123.8542ms 404  
+2019-11-14 17:03:55.0219|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatMsg/   
+2019-11-14 17:03:55.1029||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:03:55.1429|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatMsgController.Get (WebAPI)' 
+2019-11-14 17:03:55.1749|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatMsg"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(System.String, System.String, System.String, System.String) on controller WebAPI.Controllers.WeChatMsgController (WebAPI). 
+2019-11-14 17:04:05.0355|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor|Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8 
+2019-11-14 17:04:05.0465|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatMsgController.Get (WebAPI) in 9867.0021ms 
+2019-11-14 17:04:05.0465|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatMsgController.Get (WebAPI)' 
+2019-11-14 17:04:05.0465|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 10029.728200000001ms 200 text/plain; charset=utf-8 
+2019-11-14 17:04:13.3980|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/evn   
+2019-11-14 17:04:13.4820||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:04:13.5230|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 125.0317ms 404  
+2019-11-14 17:04:17.1652|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/evn/   
+2019-11-14 17:04:17.2462||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:04:17.4032||DEBUG|CustomeAuthenticationMiddleware|/evn/,get 
+2019-11-14 17:04:17.4032|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 239.33290000000002ms 200 application/json; charset=utf-8 
+2019-11-14 17:04:30.4450|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/env   
+2019-11-14 17:04:30.5250||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:04:30.6840||DEBUG|CustomeAuthenticationMiddleware|/env,get 
+2019-11-14 17:04:30.6860|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 240.90540000000001ms 200 application/json; charset=utf-8 
+2019-11-14 17:04:52.5742|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/info   
+2019-11-14 17:04:52.6542||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:04:52.6942|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-14 17:04:52.6982|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "getWebInfo", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult getWebInfo() on controller WebAPI.Controllers.ValuesController (WebAPI). 
+2019-11-14 17:04:52.6982|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:04:52.7142|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.ValuesController.getWebInfo (WebAPI) in 15.4886ms 
+2019-11-14 17:04:52.7142|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.ValuesController.getWebInfo (WebAPI)' 
+2019-11-14 17:04:52.7142|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 142.0662ms 200 application/json; charset=utf-8 
+2019-11-14 17:05:34.9087||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:05:43.1901|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI   
+2019-11-14 17:05:43.5501||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:05:44.1372|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-14 17:05:44.7662||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi,get 
+2019-11-14 17:05:44.8872|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1696.7103000000002ms 200 application/json; charset=utf-8 
+2019-11-14 17:06:17.5331|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI   
+2019-11-14 17:06:17.6171||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:06:17.7491|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 215.9436ms 404  
+2019-11-14 17:06:32.7990|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/accesstoken   
+2019-11-14 17:06:32.8800||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:06:32.9210|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 121.88690000000001ms 404  
+2019-11-14 17:06:36.8382|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/accesstoken/   
+2019-11-14 17:06:36.9192||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:06:36.9612|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 124.0476ms 404  
+2019-11-14 17:07:43.3890||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:07:49.3023|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env   
+2019-11-14 17:07:49.6494||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:07:49.8584|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 556.3497ms 404  
+2019-11-14 17:08:05.5453|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env   
+2019-11-14 17:08:05.6243||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:08:05.6693|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 123.9578ms 404  
+2019-11-14 17:08:09.0135|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:08:09.0925||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:08:09.1355|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 121.9128ms 404  
+2019-11-14 17:10:31.0326||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:10:34.7948|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:35.1428||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:35.3408|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 546.1753ms 404  
+2019-11-14 17:10:37.2199|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:37.2979||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:37.3409|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 120.671ms 404  
+2019-11-14 17:10:37.8990|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:37.9790||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:38.0200|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 121.59020000000001ms 404  
+2019-11-14 17:10:38.3710|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:38.4490||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:38.4910|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 120.22670000000001ms 404  
+2019-11-14 17:10:38.5940|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:38.6710||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:38.7110|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 117.164ms 404  
+2019-11-14 17:10:38.7860|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:38.8630||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:38.9030|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 117.32440000000001ms 404  
+2019-11-14 17:10:38.9860|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:39.0640||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:39.1040|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 118.32220000000001ms 404  
+2019-11-14 17:10:39.1691|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:39.2471||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:39.2861|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 117.13390000000001ms 404  
+2019-11-14 17:10:39.3451|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:39.4241||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:39.4651|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 119.2616ms 404  
+2019-11-14 17:10:39.5381|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:39.6161||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:39.6571|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 118.65740000000001ms 404  
+2019-11-14 17:10:39.7371|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:39.8151||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:39.8541|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 116.77340000000001ms 404  
+2019-11-14 17:10:39.9291|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:40.0071||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:40.0471|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 118.0541ms 404  
+2019-11-14 17:10:40.1211|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:40.1991||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:40.2381|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 116.8186ms 404  
+2019-11-14 17:10:40.3061|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:40.3841||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:40.4241|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 118.1721ms 404  
+2019-11-14 17:10:40.5051|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:40.5831||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:40.6221|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 116.8023ms 404  
+2019-11-14 17:10:40.6901|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:40.7681||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:40.8091|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 118.9358ms 404  
+2019-11-14 17:10:40.8812|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:40.9592||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:40.9992|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 117.8405ms 404  
+2019-11-14 17:10:41.0572|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:41.1352||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:41.1762|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 118.3203ms 404  
+2019-11-14 17:10:41.2742|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:41.3512||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:41.3912|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 117.5515ms 404  
+2019-11-14 17:10:54.2979|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env/   
+2019-11-14 17:10:54.3769||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:10:54.4169|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 119.1337ms 404  
+2019-11-14 17:11:12.1109|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatMsg   
+2019-11-14 17:11:12.1909||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:11:12.2309|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatMsgController.Get (WebAPI)' 
+2019-11-14 17:11:12.2629|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatMsg"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(System.String, System.String, System.String, System.String) on controller WebAPI.Controllers.WeChatMsgController (WebAPI). 
+2019-11-14 17:11:21.2615|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor|Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8 
+2019-11-14 17:11:21.2775|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatMsgController.Get (WebAPI) in 9005.4595ms 
+2019-11-14 17:11:21.2775|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatMsgController.Get (WebAPI)' 
+2019-11-14 17:11:21.2775|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 9168.5162ms 200 text/plain; charset=utf-8 
+2019-11-14 17:12:53.2457|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/BaseAPI   
+2019-11-14 17:12:53.3237||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:12:53.7247|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-14 17:12:54.3138|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1067.7016ms 404  
+2019-11-14 17:13:04.8054|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/BaseAPI/env   
+2019-11-14 17:13:04.8834||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:13:04.9234|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 117.83630000000001ms 404  
+2019-11-14 17:13:40.7464||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:13:50.5970|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/baseapi/env   
+2019-11-14 17:13:50.9480||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:13:51.1430|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.BaseAPIConteoller.Get (WebAPI)' 
+2019-11-14 17:13:51.1680|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "BaseAPIConteoller"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.BaseAPIConteoller (WebAPI). 
+2019-11-14 17:13:51.4701|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:13:51.4881|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.BaseAPIConteoller.Get (WebAPI) in 316.5725ms 
+2019-11-14 17:13:51.4881|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.BaseAPIConteoller.Get (WebAPI)' 
+2019-11-14 17:13:51.4881|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 895.4911000000001ms 400 application/json; charset=utf-8 
+2019-11-14 17:15:16.4909||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:15:17.3000|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env   
+2019-11-14 17:15:17.6450||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:15:18.2330|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'EntityContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-11-14 17:15:18.8020||DEBUG|CustomeAuthenticationMiddleware|/wechatbaseapi/env,get 
+2019-11-14 17:15:18.9291|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1629.3297ms 200 application/json; charset=utf-8 
+2019-11-14 17:15:49.7728|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env   
+2019-11-14 17:15:49.8548||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:15:49.9858|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIConteoller.Get (WebAPI)' 
+2019-11-14 17:15:50.0088|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPIConteoller"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIConteoller (WebAPI). 
+2019-11-14 17:15:50.2768|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:15:50.2908|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIConteoller.Get (WebAPI) in 277.45480000000003ms 
+2019-11-14 17:15:50.2908|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIConteoller.Get (WebAPI)' 
+2019-11-14 17:15:50.2908|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 519.6875ms 400 application/json; charset=utf-8 
+2019-11-14 17:16:34.9684||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:16:38.8586|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/WeChatBaseAPI/env   
+2019-11-14 17:16:39.1986||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:16:39.3977|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 539.2064ms 404  
+2019-11-14 17:16:54.6025|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/env   
+2019-11-14 17:16:54.6795||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:16:54.7225|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 120.2059ms 404  
+2019-11-14 17:18:54.4354||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:19:00.9808|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/env   
+2019-11-14 17:19:01.3448||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:19:01.5408|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 560.3537ms 404  
+2019-11-14 17:19:46.2023||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:19:54.0728|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/env   
+2019-11-14 17:19:54.4168||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:19:54.6108|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 538.3696ms 404  
+2019-11-14 17:19:56.5329|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/env   
+2019-11-14 17:19:56.6109||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:19:56.6529|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 119.8438ms 404  
+2019-11-14 17:20:15.2730||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:20:19.5292|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/env   
+2019-11-14 17:20:19.8783||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:20:20.0783|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 548.9093ms 404  
+2019-11-14 17:20:44.8887|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:20:44.9687||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:20:45.0107|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIConteoller.Get (WebAPI)' 
+2019-11-14 17:20:45.0367|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPIConteoller"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIConteoller (WebAPI). 
+2019-11-14 17:20:45.3087|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:20:45.3227|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIConteoller.Get (WebAPI) in 281.8546ms 
+2019-11-14 17:20:45.3227|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIConteoller.Get (WebAPI)' 
+2019-11-14 17:20:45.3227|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 435.71750000000003ms 400 application/json; charset=utf-8 
+2019-11-14 17:21:01.6127||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:22:00.0680||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:22:03.4352|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:22:03.7802||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:22:03.9732|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:22:03.9992|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-14 17:22:04.2842|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:22:04.3012|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI) in 297.3503ms 
+2019-11-14 17:22:04.3012|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:22:04.3012|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 870.5241000000001ms 400 application/json; charset=utf-8 
+2019-11-14 17:22:08.7095|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:22:08.7855||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:22:08.8275|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:22:08.8275|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-14 17:22:09.0245|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:22:09.0245|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI) in 196.6848ms 
+2019-11-14 17:22:09.0245|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:22:09.0275|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 318.0187ms 400 application/json; charset=utf-8 
+2019-11-14 17:22:16.4289|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:22:16.5059||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:22:16.5469|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:22:16.5469|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-14 17:25:59.6747||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:26:02.5149|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:26:02.8689||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:26:03.0619|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:26:03.0879|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-14 17:32:04.9836||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:32:05.2076|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:32:05.5846||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:32:05.8056|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:32:05.8306|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-14 17:33:40.1450||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:33:43.1942|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:33:43.5532||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:33:43.7502|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:33:43.7752|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-14 17:33:58.2191|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:33:58.2361|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI) in 14456.18ms 
+2019-11-14 17:33:58.2361|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:33:58.2401|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 15045.505200000001ms 200 application/json; charset=utf-8 
+2019-11-14 17:34:52.8902||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-11-14 17:34:57.0504|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost/wechatbaseapi/accesstoken   
+2019-11-14 17:34:57.3945||DEBUG|IPCheckMiddleware|Request from Remote IP address: ::1 
+2019-11-14 17:34:57.5985|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:34:57.6235|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeChatBaseAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller WebAPI.Controllers.WeChatBaseAPIController (WebAPI). 
+2019-11-14 17:35:10.8622|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'WebAPI.CustomResult'. 
+2019-11-14 17:35:10.8812|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI) in 13253.975400000001ms 
+2019-11-14 17:35:10.8812|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebAPI.Controllers.WeChatBaseAPIController.Get (WebAPI)' 
+2019-11-14 17:35:10.8812|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13835.6519ms 400 application/json; charset=utf-8 
